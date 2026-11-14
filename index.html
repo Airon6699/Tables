@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLEX | Premium Furniture</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="loader" id="loader">
+        <h1>TABLE<span>X</span></h1>
+        <div class="loader-line"></div>
+    </div>
+
+    <header class="header">
+        <a href="#" class="logo">TABLE<span>X</span></a>
+
+        <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="#products">Collection</a>
+            <a href="#catalog">Catalog</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="icon-btn" id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="icon-btn cart-button" id="cartBtn">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span id="cartCount">0</span>
+            </button>
+            <button class="menu-btn" id="menuBtn"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="eyebrow">DESIGNED FOR YOUR SPACE</span>
+                <h1>More than a table.<br><span>A lifestyle.</span></h1>
+                <p>Discover premium tables designed to bring style, comfort and functionality into your everyday life.</p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn primary-btn">Explore Collection <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#about" class="btn secondary-btn">Our Story</a>
+                </div>
+                <div class="hero-stats">
+                    <div><strong>120+</strong><span>Unique Designs</span></div>
+                    <div><strong>15K+</strong><span>Happy Customers</span></div>
+                    <div><strong>10Y</strong><span>Of Experience</span></div>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1499933374294-4584851497cc?w=1200" alt="Premium wooden table">
+                <div class="image-label">
+                    <span>01 / 04</span>
+                    <strong>Modern Living Collection</strong>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories section" id="categories">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">FIND YOUR STYLE</span>
+                    <h2>Explore Categories</h2>
+                </div>
+                <a href="#products" class="text-link">View All <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="category-grid">
+                <div class="category-card" data-category="Dining">
+                    <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?w=700" alt="Dining table">
+                    <div><span>01</span><h3>Dining Tables</h3><p>For every gathering</p></div>
+                </div>
+
+                <div class="category-card" data-category="Office">
+                    <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=700" alt="Office table">
+                    <div><span>02</span><h3>Office Tables</h3><p>Work in comfort</p></div>
+                </div>
+
+                <div class="category-card" data-category="Coffee">
+                    <img src="https://images.unsplash.com/photo-1499933374294-4584851497cc?w=700" alt="Coffee table">
+                    <div><span>03</span><h3>Coffee Tables</h3><p>Small details matter</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="products section" id="products">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">OUR SELECTION</span>
+                    <h2>Featured Products</h2>
+                </div>
+                <p>Quality furniture for modern spaces.</p>
+            </div>
+
+            <div class="product-controls">
+                <div class="filters">
+                    <button class="filter active" data-filter="All">All Products</button>
+                    <button class="filter" data-filter="Dining">Dining</button>
+                    <button class="filter" data-filter="Office">Office</button>
+                    <button class="filter" data-filter="Coffee">Coffee</button>
+                </div>
+
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="searchInput" placeholder="Search tables...">
+                </div>
+            </div>
+
+            <div class="product-grid" id="productGrid">
+                <article class="product-card" data-name="Nordic Oak Table" data-category="Dining" data-price="450">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?w=700" alt="Nordic Oak Table">
+                        <span class="product-tag">BESTSELLER</span>
+                        <button class="favorite"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <span>DINING TABLE</span>
+                        <h3>Nordic Oak Table</h3>
+                        <div class="product-bottom"><strong>$450</strong><button class="add-btn">Add to Cart <i class="fa-solid fa-plus"></i></button></div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-name="Minimal Work Desk" data-category="Office" data-price="320">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=700" alt="Minimal Work Desk">
+                        <span class="product-tag">NEW</span>
+                        <button class="favorite"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <span>OFFICE TABLE</span>
+                        <h3>Minimal Work Desk</h3>
+                        <div class="product-bottom"><strong>$320</strong><button class="add-btn">Add to Cart <i class="fa-solid fa-plus"></i></button></div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-name="Marble Coffee Table" data-category="Coffee" data-price="280">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1499933374294-4584851497cc?w=700" alt="Marble Coffee Table">
+                        <span class="product-tag">POPULAR</span>
+                        <button class="favorite"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <span>COFFEE TABLE</span>
+                        <h3>Marble Coffee Table</h3>
+                        <div class="product-bottom"><strong>$280</strong><button class="add-btn">Add to Cart <i class="fa-solid fa-plus"></i></button></div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-name="Classic Walnut Table" data-category="Dining" data-price="590">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=700" alt="Classic Walnut Table">
+                        <button class="favorite"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <span>DINING TABLE</span>
+                        <h3>Classic Walnut Table</h3>
+                        <div class="product-bottom"><strong>$590</strong><button class="add-btn">Add to Cart <i class="fa-solid fa-plus"></i></button></div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-name="Urban Studio Desk" data-category="Office" data-price="390">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?w=700" alt="Urban Studio Desk">
+                        <button class="favorite"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <span>OFFICE TABLE</span>
+                        <h3>Urban Studio Desk</h3>
+                        <div class="product-bottom"><strong>$390</strong><button class="add-btn">Add to Cart <i class="fa-solid fa-plus"></i></button></div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-name="Round Oak Coffee Table" data-category="Coffee" data-price="210">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1538688423619-a81d3f23454b?w=700" alt="Round Oak Coffee Table">
+                        <button class="favorite"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <span>COFFEE TABLE</span>
+                        <h3>Round Oak Coffee Table</h3>
+                        <div class="product-bottom"><strong>$210</strong><button class="add-btn">Add to Cart <i class="fa-solid fa-plus"></i></button></div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="catalog section" id="catalog">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">PRODUCT DATABASE</span>
+                    <h2>Product Specifications</h2>
+                </div>
+                <p>Compare our products in one place.</p>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Category</th>
+                            <th>Material</th>
+                            <th>Dimensions</th>
+                            <th>Price</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nordic Oak Table</td>
+                            <td>Dining</td>
+                            <td>Solid Oak</td>
+                            <td>180 × 90 cm</td>
+                            <td>$450</td>
+                            <td><span class="status available">In Stock</span></td>
+                        </tr>
+                        <tr>
+                            <td>Minimal Work Desk</td>
+                            <td>Office</td>
+                            <td>Oak / Metal</td>
+                            <td>140 × 70 cm</td>
+                            <td>$320</td>
+                            <td><span class="status available">In Stock</span></td>
+                        </tr>
+                        <tr>
+                            <td>Marble Coffee Table</td>
+                            <td>Coffee</td>
+                            <td>Marble</td>
+                            <td>90 × 60 cm</td>
+                            <td>$280</td>
+                            <td><span class="status limited">Limited</span></td>
+                        </tr>
+                        <tr>
+                            <td>Classic Walnut Table</td>
+                            <td>Dining</td>
+                            <td>Walnut</td>
+                            <td>200 × 100 cm</td>
+                            <td>$590</td>
+                            <td><span class="status available">In Stock</span></td>
+                        </tr>
+                        <tr>
+                            <td>Urban Studio Desk</td>
+                            <td>Office</td>
+                            <td>Wood / Steel</td>
+                            <td>160 × 80 cm</td>
+                            <td>$390</td>
+                            <td><span class="status unavailable">Out of Stock</span></td>
+                        </tr>
+                        <tr>
+                            <td>Round Oak Coffee Table</td>
+                            <td>Coffee</td>
+                            <td>Natural Oak</td>
+                            <td>80 × 80 cm</td>
+                            <td>$210</td>
+                            <td><span class="status available">In Stock</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1000" alt="Modern furniture interior">
+            </div>
+            <div class="about-content">
+                <span class="eyebrow">WHO WE ARE</span>
+                <h2>Designed with purpose. Built to last.</h2>
+                <p>At TABLEX, we believe furniture should be more than functional. Every table is designed with attention to detail, quality materials and timeless style.</p>
+                <a href="#products" class="btn primary-btn">Discover More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <span class="eyebrow">STAY CONNECTED</span>
+            <h2>Good design starts here.</h2>
+            <p>Subscribe to receive updates about new collections and special offers.</p>
+            <form id="subscribeForm">
+                <input type="email" id="emailInput" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+            <p id="subscribeMessage"></p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div>
+                <a href="#" class="logo">TABLE<span>X</span></a>
+                <p>Creating beautiful spaces, one table at a time.</p>
+            </div>
+            <div class="footer-links">
+                <div><h4>Explore</h4><a href="#home">Home</a><a href="#products">Collection</a><a href="#catalog">Catalog</a></div>
+                <div><h4>Company</h4><a href="#about">About Us</a><a href="#about">Our Story</a><a href="#about">Contact</a></div>
+                <div><h4>Follow Us</h4><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">Pinterest</a></div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 TABLEX. All rights reserved.</span>
+            <span>Designed for modern living.</span>
+        </div>
+    </footer>
+
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <aside class="cart-panel" id="cartPanel">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button id="closeCart"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p class="empty-cart">Your cart is empty.</p>
+        </div>
+        <div class="cart-total">
+            <div><span>Total</span><strong id="cartTotal">$0</strong></div>
+            <button id="checkoutBtn">Continue to Checkout <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+</html>
